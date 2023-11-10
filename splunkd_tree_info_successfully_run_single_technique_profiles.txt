@@ -1,0 +1,127 @@
+commands:
+
+ProcessName: splunkd and EventName: Processstart
+ProcessID: <>
+====================================================================================================================
+[Successfully Executed Single-Technique-Profiles (trials)]
+
+
+atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__35d92515122effdd73801c6ac3021da7__trial_2
+
+splunkd (5124) #events 3449 -- first event IMAGELOAD @ 12:13:27.717
+--- conhost (3932) -- #events 779 -- first event IMAGELOAD @ 12:13:28.863
+--- powershell.exe (1624) #events 11619 -- first event IMAGELOAD @ 12:13:33.276
+--- powershell.exe (7680) #events 5555 -- first event IMAGELOAD @ 12:14:37.343
+
+
+atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__35d92515122effdd73801c6ac3021da7__trial_3
+splunkd (8096) #events 3449 -- first event IMAGELOAD @ 12:32:13.575
+--- conhost (1596) -- #events 780 -- first event IMAGELOAD @ 12:32:15.003
+--- powershell.exe (7740) #events 11620 -- first event IMAGELOAD @ 12:32:18.085
+--- powershell.exe (5084) #events 5569 -- first event IMAGELOAD @ 12:33:02.521
+
+
+atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__35d92515122effdd73801c6ac3021da7__trial_4
+splunkd (376) #events 3449 -- first event IMAGELOAD @ 12:50:30.481
+--- conhost (7016) -- #events 780 -- first event IMAGELOAD @ 12:50:31.396
+--- powershell.exe (5152) #events 11619 -- first event IMAGELOAD @ 12:50:34.714
+--- powershell.exe (4424) #events 5566 -- first event IMAGELOAD @ 12:51:47.510
+
+atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__35d92515122effdd73801c6ac3021da7__trial_5
+splunkd (8784) #events 3449 -- first event IMAGELOAD @ 13:09:23.845
+--- conhost (10364) -- #events 780 -- first event IMAGELOAD @ 13:09:24.829
+--- powershell.exe (10940) #events 11607 -- first event IMAGELOAD @ 13:09:29.484
+--- powershell.exe (10256) #events 5559 -- first event IMAGELOAD @ 13:11:17.740
+
+
+====================================================================================================================
+
+[Unsuccessfully Executed Single-Technique-Profiles (trials)]
+
+atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__36fc42ced381416ca7d5d7af0ee0561b__trial_1
+splunkd (2584) #events 3465  -- first event IMAGELOAD @ 13:28:38.615
+--- conhost (7212) -- #events 783 -- first event IMAGELOAD @ 13:28:42.028
+--- powershell.exe (5372) #events 11617 -- first event IMAGELOAD @ 13:28:46.000
+--- powershell.exe (7116) #events 20522 -- first event IMAGELOAD @ 13:29:39.168
+
+atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__36fc42ced381416ca7d5d7af0ee0561b__trial_2
+splunkd (11104) #events 3465 -- first event IMAGELOAD @ 13:47:36.955
+--- conhost (6376) -- #events -- first event IMAGELOAD @ 13:47:39.746
+--- powershell.exe (7064) #events 11612 -- first event IMAGELOAD @ 13:47:44.252
+--- powershell.exe (2456) #events 16728 -- first event IMAGELOAD @ 13:48:40.129
+
+
+atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__60bb6f8468aa98b75be2521861a164d5__trial_1
+splunkd (8540) #events 3465 -- first event IMAGELOAD @ 15:01:51.881
+--- conhost (2388) -- #events 780  -- first event IMAGELOAD @ 15:01:52.956
+--- powershell.exe (4952) #events 11627 -- first event IMAGELOAD @ 15:01:54.789
+--- powershell.exe (5992) #events 11624 -- first event IMAGELOAD @ 15:02:42.618
+
+atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__82dcefb5c3512d73bf2248cb0127c4ae__trial_1
+splunkd (9020) #events 3449  -- first event IMAGELOAD @ 16:33:49.355
+--- conhost (10024) -- #events 780  -- first event IMAGELOAD @ 16:33:50.433
+--- powershell.exe (1340) #events 11608 -- first event IMAGELOAD @ 16:33:54.003
+--- powershell.exe (6852) #events 8902 -- first event IMAGELOAD @ 16:34:37.763
+
+
+atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__8e01631039faf6a9a84df376bf9ad0f1__trial_1
+splunkd (10280) #events 3449 -- first event IMAGELOAD @ 18:05:42.942
+--- conhost (2584) -- #events  -- first event IMAGELOAD @ 18:05:44.276
+--- powershell.exe (8784) #events 11614 -- first event IMAGELOAD @ 18:05:47.529
+--- powershell.exe (5456) #events 5617 -- first event IMAGELOAD @ 18:07:15.289
+
+
+====================================================================================================================
+
+Based on above observation,
+Number of events of "splunkd.exe", "conhost.exe", and "first powershell.exe" are very similar across different single-technique-profile trials.
+
+"splunkd.exe": caldera-agent-process
+
+"conhost.exe": < look for it in past slides >
+
+"first powershell.exe": likely this corresponds to the cleaning-up command which the caldera-agent always executes before executing the actual techniques(abilities) of the adversary-profile(operation).
+
+	"ability": {
+        	                "ability_id": "43b3754c-def4-4699-a673-1d85648fda6a",
+                	        "tactic": "defense-evasion",
+                        	"technique_name": "Indicator Removal on Host: Clear Command History",
+                        	"technique_id": "T1070.003",
+                        	"name": "Avoid logs",
+                        	"description": "Stop terminal from logging history",
+                        	"executors": [
+                               			 ...
+                            			{
+                                		"name": "psh",
+                                		"platform": "windows",
+                                		"command": "Clear-History;Clear",
+                                		"code": null,
+                                		"language": null,
+                                		"build_target": null,
+                                		"payloads": [],
+                                		"uploads": [],
+                                		"timeout": 60,
+                                		"parsers": [],
+                                		"cleanup": [],
+                                		"variations": [],
+                                		"additional_info": {}
+                           			 }
+				]
+		}
+
+
+The "second(last) powershell.exe" should correspond to the "actual single technique" of the single-technique-profile 
+given that the #events is consistent across trials within the successfully executed profile, 
+and different across unsucessfully-executed profiles 
+(although the command is unsuccessful, the powershell-process should be able to still generate events).
+
+-- sometimes caldera-agent is not deleted properly throughout the log-collection loop.
+   check if there are cases where there are more than 3 child-processes of splunkd.exe.
+   While the last powershell-process would likely be the actual-single-technique, 
+   find a way to identify the 'clear command history' process's activity from log-entry level (if possible)
+   so that the identification is more robust.
+
+
+
+
+
