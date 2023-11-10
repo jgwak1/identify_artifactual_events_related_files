@@ -1,16 +1,13 @@
-- description: Custom No-Command Ability(Technique) to Only Generate Artifactual Events (Joon-Young Gwak @ 2023-11-09) 
-  id: joonyounggwak_no_command_ability_id
-  name: Custom No-Command Ability(Technique) to Only Generate Artifactual Events (JY)
+- description: Custom No-Command Ability(Technique) to Only Generate Artifactual Events 
+  id: joonyounggwaknocommandabilityid
+  name: Custom No-Command Ability Technique to Only Generate Artifactual Events
   platforms:
     windows:
       psh:
         cleanup: ''
-        command: ''
-        parsers:
-          plugins.atomic.app.parsers.atomic_powershell:
-          - source: validate_me
+        command: echo "nothing"
         payloads: []
   tactic: credential-access
   technique:
     attack_id: JYCUSTOM
-    name: 'Custom No-Command Ability(Technique) to Only Generate Artifactual Events (JY)'
+    name: 'Custom No-Command Ability Technique to Only Generate Artifactual Events'
