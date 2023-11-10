@@ -1,7 +1,7 @@
 adversary_id: joonyoung_no_command_single_technique_profile_for_artifactual_event_identification_trial_1
 name: Single Technique Custom Adversary Profile (No Command)
-description: added ability 'joonyounggwak_no_command_ability_id.yml' to atomic plugin
+description: added ability 'joonyounggwaknocommandabilityid.yml' to atomic plugin
 atomic_ordering:
-- joonyounggwak_no_command_ability_id
+- joonyounggwaknocommandabilityid
 objective: 495a9828-cab1-44dd-a0ca-66e58177d8cc
 tags: []
