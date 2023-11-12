@@ -1,0 +1,6 @@
+Thread <ThreadID> (in Process <ProcessID>) stopped. 
+Process <ProcessID> had an image unloaded with name \Device\HarddiskVolume\Windows\System\WindowsPowerShell\v.\powershell.exe. 
+Process <ProcessID> (which started at time ::. (. MSec)) stopped at time ::. (. MSec) with exit code . 
+Base CPU priority of thread <ThreadID> in process <ProcessID> was changed from  to . 
+Process <ProcessID> had an image loaded with name \Device\HarddiskVolume\Windows\System\WindowsPowerShell\v.\powershell.exe. 
+Thread  (in Process <ProcessID>) started. 
