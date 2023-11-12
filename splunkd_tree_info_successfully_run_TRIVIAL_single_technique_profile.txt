@@ -1,0 +1,29 @@
+joonyoung_no_command_single_technique_profile_for_artifactual_event_identification_trial_1
+
+6012 (splunkd) #events: 2395 / first-event: Nov 11, 2023 @ 18:51:47.153
+-> 1596 (conhost.exe) / #events: 284 / first-event: Nov 11, 2023 @ 18:51:49.039
+-> 4164 (powershell.exe) / #events: 617 / first-event: Nov 11, 2023 @ 18:51:56.551
+-> 5240 (powershell.exe) / #events: 189 / first-event: Nov 11, 2023 @ 18:54:12.968
+
+
+
+
+joonyoung_no_command_single_technique_profile_for_artifactual_event_identification_trial_2
+1620 (splunkd) #events: 2936 / first-event:  Nov 11, 2023 @ 19:35:11.132
+->  5340 (conhost.exe) / #events: 790 / first-event: Nov 11, 2023 @ 19:35:16.381
+->  6588 (powershell.exe) / #events: 7207 / first-event: Nov 11, 2023 @ 19:35:33.571
+->  7588 (powerhsell.exe) / #events: 192 / first-event: Nov 11, 2023 @ 19:37:17.997
+
+
+
+joonyoung_no_command_single_technique_profile_for_artifactual_event_identification_trial_3 (* #events quite strange except for the last one)
+9804 (splunkd) #events: 46 / first-event: Nov 11, 2023 @ 20:06:35.507
+->  10056 (conhost.exe) / #events: 37 / first-event: Nov 11, 2023 @ 20:06:36.522
+->  2164 (powershell.exe) / #events: 185 / first-event: Nov 11, 2023 @ 20:06:43.425
+->  10136 (powershell.exe) / #events: 194 / first-event: Nov 11, 2023 @ 20:09:03.856
+
+
+
+# JY @ 2023-11-12: There is some degree of inconsistency in #events of artifactual processes.
+#                  However, for the trivial-single-technique process, the #events are consistent.
+#                  So will work on that to identify the artifactual events based on that.
