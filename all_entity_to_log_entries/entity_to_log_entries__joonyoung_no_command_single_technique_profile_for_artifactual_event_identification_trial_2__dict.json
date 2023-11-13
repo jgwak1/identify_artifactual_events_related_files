@@ -1,0 +1,1540 @@
+{
+    "None": [
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:17.997539",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.002207",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.005316",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.008386",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.012264",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.017891",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.021983",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6568,
+            "Timestamp": "2023-11-12 00:37:18.050156",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.063681",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.067895",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.074645",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.081380",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.084491",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6568,
+            "Timestamp": "2023-11-12 00:37:18.086518",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.090204",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6568,
+            "Timestamp": "2023-11-12 00:37:18.094364",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.098012",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6568,
+            "Timestamp": "2023-11-12 00:37:18.100117",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.120267",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6568,
+            "Timestamp": "2023-11-12 00:37:18.126404",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6568,
+            "Timestamp": "2023-11-12 00:37:18.133137",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.143967",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6568,
+            "Timestamp": "2023-11-12 00:37:18.152038",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.156246",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.158817",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.160347",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.164431",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.171257",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.176203",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.178220",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 8016,
+            "Timestamp": "2023-11-12 00:37:18.181799",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.194677",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.196732",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.198772",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.199795",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.201354",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.205466",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.209630",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.211185",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.215358",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.220058",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.224206",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 9152,
+            "Timestamp": "2023-11-12 00:37:18.315640",
+            "TaskName": "CpuBasePriorityChange",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.318655",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.320733",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.419463",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 11172,
+            "Timestamp": "2023-11-12 00:37:18.817083",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.821153",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.824283",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.826856",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:18.843849",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 4696,
+            "Timestamp": "2023-11-12 00:37:18.845412",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 4696,
+            "Timestamp": "2023-11-12 00:37:18.846452",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 4696,
+            "Timestamp": "2023-11-12 00:37:18.848552",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 4696,
+            "Timestamp": "2023-11-12 00:37:18.849558",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 4696,
+            "Timestamp": "2023-11-12 00:37:18.851603",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 4696,
+            "Timestamp": "2023-11-12 00:37:18.853624",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 4696,
+            "Timestamp": "2023-11-12 00:37:18.855179",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 4696,
+            "Timestamp": "2023-11-12 00:37:18.857252",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 4696,
+            "Timestamp": "2023-11-12 00:37:18.858280",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:18.860357",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:18.862418",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:18.863984",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:18.866060",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:18.868144",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:18.871201",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:18.872777",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 4696,
+            "Timestamp": "2023-11-12 00:37:18.873786",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:18.875832",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:18.877876",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:18.878904",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:18.880982",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:18.885653",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:19.244242",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:19.268272",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:19.279184",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:19.283281",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:19.285909",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:19.292756",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:19.297949",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:19.317337",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:19.327314",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:19.330980",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:19.334116",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:19.680409",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:19.682510",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:19.684599",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:19.686703",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:19.688433",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:19.692098",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:20.012773",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 9612,
+            "Timestamp": "2023-11-12 00:37:20.015381",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 9612,
+            "Timestamp": "2023-11-12 00:37:20.023206",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 2480,
+            "Timestamp": "2023-11-12 00:37:20.027356",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 4696,
+            "Timestamp": "2023-11-12 00:37:20.504081",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 9612,
+            "Timestamp": "2023-11-12 00:37:21.296347",
+            "TaskName": "ThreadStart/Start",
+            "OpcodeName": "Start",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 9612,
+            "Timestamp": "2023-11-12 00:37:21.542175",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 9612,
+            "Timestamp": "2023-11-12 00:37:21.543197",
+            "TaskName": "ImageLoad",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:21.977751",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 9612,
+            "Timestamp": "2023-11-12 00:37:22.018046",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 9152,
+            "Timestamp": "2023-11-12 00:37:22.034263",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 1144,
+            "Timestamp": "2023-11-12 00:37:22.037374",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 5284,
+            "Timestamp": "2023-11-12 00:37:22.038409",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 4696,
+            "Timestamp": "2023-11-12 00:37:22.040479",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 4764,
+            "Timestamp": "2023-11-12 00:37:22.043128",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 1568,
+            "Timestamp": "2023-11-12 00:37:22.045215",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 748,
+            "Timestamp": "2023-11-12 00:37:22.047272",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6356,
+            "Timestamp": "2023-11-12 00:37:22.048373",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 4836,
+            "Timestamp": "2023-11-12 00:37:22.050986",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 8276,
+            "Timestamp": "2023-11-12 00:37:22.054111",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 3188,
+            "Timestamp": "2023-11-12 00:37:22.057850",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 11172,
+            "Timestamp": "2023-11-12 00:37:22.095171",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 3104,
+            "Timestamp": "2023-11-12 00:37:22.184680",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 2668,
+            "Timestamp": "2023-11-12 00:37:22.187758",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 8016,
+            "Timestamp": "2023-11-12 00:37:22.189809",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6568,
+            "Timestamp": "2023-11-12 00:37:22.195448",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.199717",
+            "TaskName": "ThreadStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.204649",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.214238",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.219928",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.235730",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.239384",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.252466",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.257163",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.260273",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.261822",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.265993",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.270673",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.275409",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.280247",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.283441",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.291110",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.296306",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.303145",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.310708",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.316875",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.319552",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.330315",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.333410",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.336014",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.338091",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.340188",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.342242",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.343853",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.349029",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.351658",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.354717",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.355730",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.357743",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.359787",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.360834",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.365408",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.367501",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.370537",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.372611",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.376208",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.379260",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.381271",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.382286",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.383838",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.385918",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.421245",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.424293",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.431928",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.436030",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.442649",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.447714",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.451310",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.455406",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.461113",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.463202",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.469870",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.474964",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.480580",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.490443",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.498288",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.504091",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.513828",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.519644",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.527705",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.529744",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.532277",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.534358",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.536444",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.545243",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.635015",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.684765",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.687894",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.688913",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.691543",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.693572",
+            "TaskName": "ImageUnload",
+            "OpcodeName": "Info",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        },
+        {
+            "ProcessID": 7588,
+            "ThreadID": 6404,
+            "Timestamp": "2023-11-12 00:37:22.695675",
+            "TaskName": "ProcessStop/Stop",
+            "OpcodeName": "Stop",
+            "PROVIDER_SPECIFIC_ENTITY": "None"
+        }
+    ]
+}
